@@ -1,0 +1,80 @@
+@font-face {
+  font-family: "title";
+  src: url(./fonts/Fredoka-Regular.ttf);
+}
+
+@font-face {
+  font-family: "regular";
+  src: url(./fonts/Fredoka-VariableFont_wdth\,wght.ttf);
+}
+
+body {
+  margin: 0;
+}
+
+#container {
+  margin: 30px auto;
+  width: 60%;
+}
+
+h1 {
+  text-align: center;
+  font-family: "title";
+}
+
+#task-form {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+#task-form button {
+  border: none;
+  background-color: grey;
+  color: white;
+  font-family: "title";
+  padding: 5px 10px;
+  border-radius: 5px;
+  cursor: pointer;
+
+}
+
+#task-description {
+  border: none;
+  border-bottom: 1px solid #aaa;
+  outline: none;
+  padding: 5 10px;
+  width: 50%;
+  margin-right: 10px;
+  font-family: "regular";
+  text-align: center;
+}
+
+#task-list-area {
+  padding-left: 10%;
+}
+#task-list {
+  font-family: "regular";
+}
+
+@media screen and (max-width:768px ){
+  #container {
+    width: 90%;
+    margin: 10px auto;
+  }
+  
+  h1 {
+    font-size: 130%;
+  }
+
+  #task-description {
+    display: block;
+    width: 90%;
+    margin: 05px auto;
+  }
+
+  #task-list {
+    padding-left: 0px ;
+    font-size: 80%;
+  }
+
+}
